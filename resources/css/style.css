@@ -1,0 +1,32 @@
+body {font-family: "Lato", sans-serif}
+.text {
+color: #ffffff;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+.clr2 {
+    background-color:#FFDAD2 
+}
+
+.clr1 {
+    background-color:#FFE2DC 
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clr {
+    background-color:#FFEDE9
+}
+
+.clr3 {
+    background-color:#FFF6F4
+}
