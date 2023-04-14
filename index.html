@@ -5,31 +5,38 @@
 <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="./resources/css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <!--Sarkanā līnija ar pogām pašā augšā-->
+  <!-- Fixed minor issues with that -->
   <nav class="w3-top">
     <nav class="w3-bar w3-red w3-card">
       <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">SĀKUMS</a>
-      <a href="#Īsumā par mani" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ĪSUMĀ PAR MANI</a>
-      <a href="#Mani hobiji" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MANI HOBIJI</a>
-      <a href="#Mīļākā mūzika" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MĪĻĀKĀ MŪZIKA</a>
-      <a href="#Kontaktinformācija" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KONTAKTINFORMĀCIJA</a>
-      <nav class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="Vairāk">SOCIĀLIE TĪKLI <i class="fa fa-caret-down"></i></button>     
-        <nav class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="https://open.spotify.com/user/3q1ef848b6kp8wsizeuifpovu?si=1d35f03465ac4821" target="_blank" class="w3-bar-item w3-button">SPOTIFY</a>
-          <a href="https://www.instagram.com/vo.amanda/" target="_blank" class="w3-bar-item w3-button">INSTAGRAM</a>
-        </nav>
-      </nav>
-      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-      <img src="uk.jpg" class="w3-right w3-padding-large" style="width:5.5%">
-      <a class="w3-right w3-padding-large">#IStandWithUkraine</a>
+	  <nav class="top_menu_bar">
+		  <nav class="nav_buttons">
+			  <a href="#" class="w3-bar-item w3-button w3-padding-large">SĀKUMS</a>
+			  <a href="#Īsumā par mani" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ĪSUMĀ PAR MANI</a>
+			  <a href="#Mani hobiji" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MANI HOBIJI</a>
+			  <a href="#Mīļākā mūzika" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MĪĻĀKĀ MŪZIKA</a>
+			  <a href="#Kontaktinformācija" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KONTAKTINFORMĀCIJA</a>
+			  <nav class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-padding-large w3-button" title="Vairāk">SOCIĀLIE TĪKLI <i class="fa fa-caret-down"></i></button>     
+				<nav class="w3-dropdown-content w3-bar-block w3-card-4">
+				  <a href="https://open.spotify.com/user/3q1ef848b6kp8wsizeuifpovu?si=1d35f03465ac4821" target="_blank" class="w3-bar-item w3-button">SPOTIFY</a>
+				  <a href="https://www.instagram.com/vo.amanda/" target="_blank" class="w3-bar-item w3-button">INSTAGRAM</a>
+				</nav>
+			  </nav>
+		  </nav>
+		  <nav class="IStandWithUkraine">
+			  <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+			  <img src="uk.jpg" class="w3-right w3-padding-large" style="width:5.5%">
+			  <a class="w3-right w3-padding-large">#IStandWithUkraine</a>
+		  </nav>
+		</nav>
     </nav>
   </nav>
 
@@ -44,31 +51,33 @@
   <div class="w3-content" style="max-width:2000px; margin-top:46px">
     
     
-     <!--Slaidi bildes pašā augšā-->
-   <div class="mySlides fade">
-       <div class="numbertext"></div>
-       <img src="slr.JPEG" style="width:100%">
-       <div class="w3-opacity text " style="font-size: 20px">"Tas ir ļoti svarīgi - laiku pa laikam. Kļūt mazam, lai augtu liels." <br>
-       - <i>Imants Ziedonis</i></div>
-   </div>    
+		 <!--Slaidi bildes pašā augšā-->
+		 <!-- This part of code should be entirelly rewritten (it too much relies on w3schools assets) -->
+		<div class="Slideshow">
+		   <div class="mySlides">
+			   <div class="numbertext"></div>
+			   <img src="slr.JPEG" style="width:100%">
+			   <p class="w3-opacity text " style="font-size: 20px">"Tas ir ļoti svarīgi - laiku pa laikam. Kļūt mazam, lai augtu liels." <br>
+			   - <i>Imants Ziedonis</i></p>
+		   </div>    
 
-   <div class="mySlides fade">
-     <div class="numbertext"></div>
-      <img src="pc1.jpeg" style="width:100%">
-      <div class= "text" style="font-size: 20px">“Ir tikai viens veids, kā izvairīties no kritikas: 
-       neko nedari, neko nesaki un nekas neesi.” <br> - <i>Aristotelis</i>
-      </div>
-    </div>
-    
-   <div class="mySlides fade">
-     <div class="numbertext"></div>
-     <img src="pc2.jpeg" style="width:100%">
-     <div class="text" style="font-size: 20px">“Cilvēks, kurš ne reizi nav pieļāvis kļūdu, nekad nav mēģinājis neko jaunu.”
-       <br> - <i>Alberts Einšteins</i>
-      </div>
-   </div>
-    
-</div>
+		   <div class="mySlides">
+			 <div class="numbertext"></div>
+			  <img src="pc1.jpeg" style="width:100%">
+			  <p class= "text" style="font-size: 20px">“Ir tikai viens veids, kā izvairīties no kritikas: 
+			   neko nedari, neko nesaki un nekas neesi.” <br> - <i>Aristotelis</i>
+			  </p>
+			</div>
+			
+		   <div class="mySlides">
+			 <div class="numbertext"></div>
+			 <img src="pc2.jpeg" style="width:100%">
+			 <p class="text" style="font-size: 20px">“Cilvēks, kurš ne reizi nav pieļāvis kļūdu, nekad nav mēģinājis neko jaunu.”
+			   <br> - <i>Alberts Einšteins</i>
+			  </p>
+		   </div>
+	   </div>		
+	</div>
     <br>
     
     <div style="text-align:center">
@@ -120,7 +129,7 @@
         </div>
         <div class="w3-third">
           <p style="font-size: 17px; color: red"><i>Viena no manām mīļajām kaķenītēm - Rika</i></p>
-          <img src="yuh.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:90%" title = "Rikiņa">
+          <img src="yuh.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:90%; height: 78%" title = "Rikiņa">
         </div>
         <div class="w3-third">
           <p style="font-size: 17px; color: red"><i>Pastaigājos gar jūru</i></p>
@@ -132,6 +141,7 @@
 </div>
 
 <!--MANI HOBIJI podziņa-->
+<!-- Changed margins, so every hobies div LOOKS (not is) simillar -->
 <div>
 <div>
   <div class="clr1" id="Mani hobiji">
@@ -147,7 +157,7 @@
           <div class="w3-container w3-white">
             <p style="font-size: 17px"><b>Ģitārspēle</b></p>
             <p class="w3-opacity">08.03.2022.</p>
-            <p style="font-size: 17px">Manuprāt, skaņa ir aizraujoša. Tāpēc spēlēju ģitāru jau gadu. Un pētu un jau krāju dažādus skaņas efektu
+            <p style="font-size: 17px; margin-bottom: 34.7%">Manuprāt, skaņa ir aizraujoša. Tāpēc spēlēju ģitāru jau gadu. Un pētu un jau krāju dažādus skaņas efektu
              pedāļus.</p>
             <button class="w3-button w3-black w3-margin-bottom" style="font-size: 17px" 
             onclick="document.style.display='block'">Man patīk!</button>
@@ -159,7 +169,7 @@
           <div class="w3-container w3-white">
             <p style="font-size: 17px"><b>Tamborēšana</b></p>
             <p class="w3-opacity">24.12.2021.</p>
-            <p style="font-size: 17px">Tamborēšanu sāku apgūt jau no 1. klases patstāvīgi. Iepatikās, jo sanāca, un šī nodarbe ir kā 
+            <p style="font-size: 17px; margin-bottom: 26%">Tamborēšanu sāku apgūt jau no 1. klases patstāvīgi. Iepatikās, jo sanāca, un šī nodarbe ir kā 
               radoša terapija. Varu veidot kaut ko skaistu un noderīgu.
             </p>
             <button class="w3-button w3-black w3-margin-bottom" onclick="document.style.display='block'">Man patīk!</button>
@@ -168,9 +178,9 @@
         <div class="w3-third w3-margin-bottom">
           <img src="cepumini.jpg" alt="Cepumi" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
-            <p style="font-size: 17px"><b>Gatavošana</b></p>
+            <p style="font-size: 17px;"><b>Gatavošana</b></p>
             <p class="w3-opacity">02.12.2021.</p>
-            <p style="font-size: 17px">Man patīk un padodas gatavot dažādus ēdienus. Labprāt atrodu interesantas recepšu idejas internetā 
+            <p style="font-size: 17px; margin-bottom: 22%">Man patīk un padodas gatavot dažādus ēdienus. Labprāt atrodu interesantas recepšu idejas internetā 
               un eksperimentēju. Gatavoju dažāda veida saldumus kā bulciņas, cepumus, saldās maizes, un ar tām iepriecinu draugus un 
               radiniekus.
             </p>
@@ -218,16 +228,16 @@
         <i class="fa fa-envelope" style="width:30px"> </i> Epasts: amandavitola15@gmail.com<br>
       </div>
       <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
+        <form action="/action_page.php" target="_blank" style="flex-direction: column;">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px; display: flex; justify-content: space-between;">
+            <div class="w3-half" style="display: flex; margin: auto;">
               <input class="w3-input w3-border" type="text" placeholder="Vārds" name="Vārds">
             </div>
-            <div class="w3-half">
+            <div class="w3-half" style="display: flex; margin: auto;">
               <input class="w3-input w3-border" type="text" placeholder="Epasts" name="Epasts" >
             </div>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Raksti ziņu šeit" required name="Raksti ziņu šeit">
+          <input style="display: flex; width: 95.5%" class="w3-input w3-border" type="text" placeholder="Raksti ziņu šeit" required name="Raksti ziņu šeit">
           <button id = "btn" class="w3-button w3-black w3-section w3-right" type = "button">NOSŪTĪT</button>
           <script>
           const btn = document.getElementById('btn');
